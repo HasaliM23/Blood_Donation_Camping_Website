@@ -1,0 +1,56 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Navigation styles */
+.container-fluid img {
+    width: 300px;
+    height: 40px;
+    padding: 2px 8px 2px 8px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.collapse ul li {
+    margin-left: 150px;
+}
+
+.collapse ul li a {
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.collapse ul li a:hover {
+    color: #ff7200;
+    font-weight: bold;
+}
+
+.navbar-brand img {
+    width: 50px;
+}
+
+/* Center profile picture and move it down */
+.card-img-top {
+    display: block;
+    margin: 20px auto 10px auto; /* Adjust the top margin to move the image down */
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Ensure there is space between form and footer */
+.container {
+    margin-bottom: 100px; /* Adjust this value as needed */
+}
+
+

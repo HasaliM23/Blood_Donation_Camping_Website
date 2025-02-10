@@ -1,0 +1,33 @@
+/* Sidebar Styles */
+#sidebar {
+    height: 100vh;
+    background-color: #f8f9fa;
+    padding-top: 1rem;
+}
+
+.sidebar-title {
+    margin-bottom: 1rem;
+}
+
+.nav-link.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.nav-link:hover {
+    background-color: #e9ecef;
+}
+
+/* Main Content Styles */
+.card-header {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e9ecef;
+}

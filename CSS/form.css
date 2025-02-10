@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,500&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    position: relative;
+    background-image: url('../images/tr.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+::selection{
+    color: #ececec;
+    background: #00b3ff;
+}
+.form{
+    position: relative;
+    background: #f2f3f7;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    padding: 30px 30px;
+}
+.form h2{
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+/* Add this to your CSS */
+.form form .error-text {
+    color: #851923;
+    padding: 4px 6px;
+    text-align: center;
+    border-radius: 4px;
+    background: #ffe3e5;
+    border: 1px solid #dfa5ab;
+    margin-bottom: 8px;
+    margin-top: 20px; /* Adjust this value to move the error box down */
+}
+.form form input.button{
+    height: 45px;
+    border:none;
+    color: #f2f3f7;
+    width: 100%;
+    background:#0171d3;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 13px;
+    border: 2px solid #2983aa;
+
+}

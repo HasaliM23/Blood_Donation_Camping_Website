@@ -1,0 +1,203 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+.main{
+    background-blend-mode: darken;
+    width: 100%;
+    background-position:center;
+    background-size: cover;
+    height: 100vh;
+    animation: slideshow 9s infinite;
+    
+  
+}
+@keyframes slideshow {
+    5% { background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url('blood.jpg'); }
+    33.33% { background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url('up.jpg'); }
+    66.66% { background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url('bd.jpg'); }
+    100% { background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url('blood.jpg'); } 
+  }
+  
+  /*navigation start*/
+  .container-fluid img{
+    width: 300px;
+    height: 40px;
+    padding: 2px 8px 2px 8px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.collapse ul li{
+    margin-left: 150px;
+}
+
+.collapse ul li a{
+    color: aliceblue;
+    font-weight: bold;
+}
+.collapse ul li a:hover{
+    color: #ff7200;
+    font-weight: bold;
+}                           /*navigation close*/
+
+section{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+
+}
+
+.fom {
+    justify-items: center;
+    justify-content: center;
+    max-width: 700px;
+    height: 540px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #fff;
+    border-radius: 20px;
+    position: relative; /* Add position relative for the z-index */
+    z-index: 1; /* Ensure the form is above the slideshow */
+}
+
+
+.fom .title{
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+
+}
+.fom .title ::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 30px;
+  
+}
+.fom form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px 0 10px 0;
+
+}
+form .user-details .input-box{
+   margin-bottom: 10px;
+    width: calc(100% / 2 - 20px);
+
+}
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+}
+form .gender-details .gender-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 20px;
+    
+}
+
+form .gender-details .category {
+    display: flex;
+    width: 80%;
+    justify-content:space-between;
+    
+    
+}
+
+form .gender-details .category label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+/* Optional: Adjust the margin to your preference */
+form .gender-details .category label:not(:last-child) {
+    margin-right:-350px;
+}
+
+form .button{
+    height: 45px;
+    margin-top: 18px;
+    
+
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: #0171d3;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 10px;
+}
+form .button input:hover {
+    
+    background-color: #ff7200;
+    color: #080808;
+    font-weight: bold;
+    
+}
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button-group input[type="submit"],
+.button-group input[type="reset"] {
+    height: 45px;
+    width: 48%;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.button-group input[type="submit"] {
+    background: #0171d3;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.button-group input[type="submit"]:hover {
+    background-color: #ff7200;
+    color: #080808;
+    font-weight: bold;
+}
+
+.button-group input[type="reset"] {
+    background: #ccc;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.button-group input[type="reset"]:hover {
+    background-color: #999;
+}
+

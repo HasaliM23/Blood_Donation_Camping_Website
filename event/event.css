@@ -1,0 +1,111 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Navigation styling */
+.container-fluid img {
+    width: 300px;
+    height: 40px;
+    padding: 2px 8px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.collapse ul li {
+    margin-left: 150px;
+}
+
+.collapse ul li a {
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.collapse ul li a:hover {
+    color: #ff7200;
+    font-weight: bold;
+}
+
+/* Main section styling */
+
+/* 
+@keyframes slideshow {
+    0% { background-image: url('blood.jpg'); }
+    25% { background-image: url('up.jpg'); }
+    50% { background-image: url('bd.jpg'); }
+    75% { background-image: url('blood.jpg'); }
+} */
+
+/* Event card styling */
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    height: 150px; /* Reduced size */
+    object-fit: cover;
+}
+
+.card-img-top:hover {
+    transform: scale(1.05); /* Slightly reduced scale */
+}
+
+.card-body {
+    background: #d6d5d5;
+    padding: 15px;
+}
+
+.card-body h5 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-body ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card-body ul li {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+
+.card-body ul li i {
+    margin-right: 8px;
+    color: #ff7200; /* Change icon color to a standout orange */
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}

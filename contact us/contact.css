@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand img {
+    width: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background start */
+.main {                                 
+    background-blend-mode: darken;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    animation: slideshow 9s infinite;
+}
+@keyframes slideshow {                 
+    5% { background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url('blood.jpg'); }
+    33.33% { background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url('up.jpg'); }
+    66.66% { background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url('up.jpg'); }
+    100% { background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url('blood.jpg'); } 
+} /* Background close */
+
+/* Navigation start */
+.container-fluid img {
+    width: 300px;
+    height: 40px;
+    padding: 2px 8px 2px 8px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.collapse ul li {
+    margin-left: 150px;
+}
+
+.collapse ul li a {
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.collapse ul li a:hover {
+    color: #ff7200;
+    font-weight: bold;
+} 
+
+/* Contact section */
+.contact {
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent background for readability */
+    color: #f8f9fa;
+}
+
+.card {
+    border: none;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body i {
+    color: #007bff;
+}
+
+.card:hover {
+    background-color: #ff7200; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+}
+
+.card:hover i {
+    color: #fff; /* Icon color on hover */
+}
+
+.card:hover .card-title,
+.card:hover .card-text {
+    color: #fff; /* Text color on hover */
+}
+
+.contactForm {
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent background for the form */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.contactForm .form-floating {
+    margin-bottom: 1rem; /* Space between form controls */
+}
+
+.contactForm .form-floating input,
+.contactForm .form-floating textarea {
+    border: 1px solid black; /* Black border for input and textarea */
+    border-radius: 0.25rem; /* Rounded corners */
+    background-color: #fff; /* White background for form controls */
+    color: #000; /* Black text color */
+}
+
+.contactForm .form-floating textarea {
+    height: 150px; /* Specific height for textarea */
+}
+
+.contactForm .form-floating label {
+    color: #666; /* Darker color for labels */
+}
+
+.contactForm .form-floating input:focus,
+.contactForm .form-floating textarea:focus {
+    border-color: #007bff; /* Change border color on focus */
+}
+
+.contactForm .form-floating input:focus ~ label,
+.contactForm .form-floating textarea:focus ~ label {
+    color: #007bff; /* Change label color on focus */
+}
+
+footer a {
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+

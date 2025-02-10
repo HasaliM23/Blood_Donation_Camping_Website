@@ -1,0 +1,227 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+/*background start*/
+.main{                                 
+    background-blend-mode: darken;
+    width: 100%;
+    background-position:center;
+    background-size: cover;
+    height: 100%;
+    animation: slideshow 9s infinite;
+    
+  
+}
+@keyframes slideshow {                 
+    5% { background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url('../images/blood.jpg'); }
+    33.33% { background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url('../images/up.jpg'); }
+    66.66% { background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url('../images/tr.jpg'); }
+    100% { background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url('../images/blood.jpg'); } 
+  }                         /*background close*/
+
+   /*navigation start*/
+.container-fluid img{
+    width: 300px;
+    height: 40px;
+    padding: 2px 8px 2px 8px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.collapse ul li{
+    margin-left: 150px;
+}
+
+.collapse ul li a{
+    color: aliceblue;
+    font-weight: bold;
+}
+.collapse ul li a:hover{
+    color: #ff7200;
+    font-weight: bold;
+}                           /*navigation close*/
+
+.contact
+{
+    position: relative;
+    min-height: 100vh;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+}
+.contact .content
+{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2
+{
+    
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: underline;
+}
+.contact .content p
+{
+    font-weight: 300;
+    color: #fff;
+}
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text h3
+{
+    font-weight: 500;
+    color: #00bcd4;
+}
+.contactForm
+{
+    width: 40%;
+    padding: 25px;
+    background: #fff;
+    border-radius: 15px;
+}
+.contactForm h2
+{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+.contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox input:focus ~span,
+.contactForm .inputBox input:valid ~span,
+.contactForm .inputBox textarea:focus ~span,
+.contactForm .inputBox textarea:valid ~span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.inputBox input[type="submit"]:hover{
+    background-color: #ff7200;
+    color: black;
+    font-weight: bold;
+}
+
+@media (max-width:991px)
+{
+    .contact
+    {
+        padding: 50px;
+    }
+    .container
+    {
+        flex-direction: column;
+    }
+    .container .contactInfo
+    {
+        margin-bottom: 40px;
+    }
+    .container .contactInfo,
+    .contactForm
+    {
+        width: 100%;
+    }
+}
+.icon img{
+    height: 55px;
+    width: 55px;
+}
+.icon1 img{
+    height: 40px;
+    width: 40px;
+}
+footer{
+    width: 100%;
+    height: 40px;
+    background-color:black;
+}
+.col1 p{
+    color: #fff;
+    padding-top: 7px;
+    font-size: small;
+    text-align: center; 
+}
+.col2{
+    color: #fff;
+    padding-top: 7px;
+    font-size: small;
+    float: right;
+
+}

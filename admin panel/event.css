@@ -1,0 +1,54 @@
+/* Sidebar Styles */
+#sidebar {
+    background-color: #f8f9fa;
+    height: 100vh;
+    padding: 1rem;
+    border-right: 1px solid #dee2e6;
+}
+
+.sidebar-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.nav-link {
+    color: #495057;
+}
+
+.nav-link.active {
+    background-color: #007bff;
+    color: white;
+    border-radius: 0.25rem;
+}
+
+.nav-link:hover {
+    background-color: #e9ecef;
+}
+
+/* Card Styles */
+.card {
+    border-radius: 0.5rem;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Table Styles */
+.table {
+    margin-top: 1rem;
+}
+
+.table th, .table td {
+    text-align: center;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}

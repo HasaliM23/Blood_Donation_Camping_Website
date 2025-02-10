@@ -1,0 +1,35 @@
+/* Sidebar Styles */
+#sidebar {
+    background-color: #f8f9fa;
+    height: 100vh;
+    padding: 1rem;
+}
+
+.sidebar-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.nav-link.active {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Card Styles */
+.card {
+    border-radius: 0.5rem;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+/* Alert Styles */
+.alert {
+    margin-bottom: 1rem;
+}
+
+/* Chart Styles */
+#donationChart {
+    height: 300px;
+}

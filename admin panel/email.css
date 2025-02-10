@@ -1,0 +1,62 @@
+/* Sidebar Styles */
+#sidebar {
+    background-color: #f8f9fa;
+    height: 100vh;
+    padding: 1rem;
+    border-right: 1px solid #dee2e6;
+}
+
+.sidebar-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.nav-link {
+    color: #495057;
+}
+
+.nav-link.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.nav-link:hover {
+    background-color: #e9ecef;
+}
+
+/* Main Content Styles */
+main {
+    padding: 2rem;
+}
+
+/* General Card Styles */
+.card-header {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Table Styles */
+.table th, .table td {
+    text-align: center;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Button Hover Effects */
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Textarea Styles */
+textarea {
+    resize: none;
+}
+
