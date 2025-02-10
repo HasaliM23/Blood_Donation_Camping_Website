@@ -1,0 +1,116 @@
+<?php include('../common/connection.php'); ?>
+
+
+<!doctype html>
+<html>
+<head>
+	<title>Event</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="..//CSS/event.css">
+	<!--boostrap link-->
+	<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+	<div class="main clearfix">
+       <!--navigation-->
+		<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+			<div class="container-fluid">
+			  <img src="..//Images/jk.png" alt="">
+			  <a class="navbar-brand" href="#"></a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+					  <a class="nav-link" href="../index.html">HOME</a>
+					</li>
+				  <li class="nav-item">
+					<a class="nav-link" href="../event/event.html">EVENTS</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="../about/about.html">ABOUT</a>
+				  </li>
+				  <li class="nav-item">
+					  <a class="nav-link" href="../contact us/contact.html">CONTACT</a>
+					</li>
+				</ul>
+			  </div>
+			</div>
+		  </nav><!--navigation-->
+          <section>
+			<div class="homecontent ">	
+				<?php 
+				
+				global $connection;
+
+				$get_events = "select * from events";
+				$run_events = mysqli_query($connection,$get_events);
+
+				while($event_row = mysqli_fetch_array($run_events)){
+					$event_id = $event_row['id'];
+					$event_name = $event_row['name'];
+					$event_date = $event_row['date'];
+					$event_time = $event_row['time'];
+					$event_location = $event_row['location'];
+					$urgent_type = $event_row['utype'];
+
+					echo "<div class='home-col'>
+    							<h2>Camp $event_id - $event_name</h2>
+    							<div class='services'>
+    							    <img src='../Images/location.png' alt='Service'>
+    							    <h3>Location</h3>
+    							    <p>$event_location</p>
+    							</div> 
+    							<div class='services'>
+    							    <img src='../Images/time and date.png' alt='Service'>
+    							    <h3>Date</h3>
+    							    <p>$event_date</p>
+    							</div>
+    							<div class='services'>
+    							    <img src='../Images/time.png' alt='Service'>
+    							    <h3>Time</h3>
+    							    <p>$event_time</p>
+    							</div>  
+    							<div class='services'>
+    							    <img src='../Images/description.png' alt='Service'>
+    							    <h3>Discription</h3>
+    							    <p>URGENT BLOOD TYPE $urgent_type</p>
+    							</div> 
+							</div>";
+					}
+				?>
+			</div> <!-- homecontent -->
+</section>
+    </div>	
+	<footer id="contact" class="container-fluid">
+        <div class="container-fluid">
+    
+            
+              <div class="col1">
+                <p style="text-align: center;">Copyright © <a href="https://www.vitalpluse-blood-bank.com">vital-pulse-blood-bank.com</a> | All right reserved.</p>
+            </div>
+        
+        </div>
+    </footer>
+</body>
+</html>
+
+
+<div class="col-md-4 mb-4">
+    <div class="card shadow-sm border-light">
+        <img src="blood.jpg" class="card-img-top" alt="Event Image">
+        <div class="card-body">
+            <h5 class="card-title">Camp 01 - Anuradhapura</h5>
+            <p class="card-text">URGENT BLOOD TYPE O+</p>
+            <ul class="list-unstyled">
+                <li><i class="fa-solid fa-location-pin"></i> Anuradhapura-Walisingha Ground</li>
+                <li><i class="fa-solid fa-calendar"></i> 26/05/2024</li>
+                <li><i class="fa-solid fa-clock"></i> 9:00 AM</li>
+                <li><i class="fa-solid fa-tint"></i> O+, O-, A-, A+, B+</li>
+            </ul>
+        </div>
+    </div>
+</div>
